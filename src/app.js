@@ -29,4 +29,12 @@ app.get('/savings', (req, res) => {
   res.render('account', { account: accounts.savings })
 });
 
+app.get('/checking', (req, res) => {
+  res.render('account', { account: accounts.savings })
+});
+
+app.get('/credit', (req, res) => {
+  res.render('account', { account: accounts.savings })
+});
+
 app.listen(3000, () => console.log('Project Started on port 3000'));
