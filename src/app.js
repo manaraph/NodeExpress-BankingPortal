@@ -37,4 +37,8 @@ app.get('/credit', (req, res) => {
   res.render('account', { account: accounts.savings })
 });
 
+app.get('/profile', (req, res) => {
+  res.render('profile', { user: users[0] })
+});
+
 app.listen(3000, () => console.log('Project Started on port 3000'));
