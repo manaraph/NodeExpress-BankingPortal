@@ -18,7 +18,10 @@ const users  = JSON.parse(userData);
 
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Index'})
+  res.render('index', { 
+    title: 'Account Summary',
+    accounts,
+  })
 });
 
 app.listen(3000, () => console.log('Project Started on port 3000'));
