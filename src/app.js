@@ -19,18 +19,6 @@ app.get('/', (req, res) => {
   })
 });
 
-app.get('/savings', (req, res) => {
-  res.render('account', { account: accounts.savings })
-});
-
-app.get('/checking', (req, res) => {
-  res.render('account', { account: accounts.savings })
-});
-
-app.get('/credit', (req, res) => {
-  res.render('account', { account: accounts.savings })
-});
-
 app.get('/transfer', (req, res) => {
   res.render('transfer', { account: accounts.savings })
 });
